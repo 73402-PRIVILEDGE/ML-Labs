@@ -1,0 +1,19 @@
+Validation Report
+
+Rows: 48842
+Columns: 15
+
+Schema Check:
+PASS
+
+Range Check:
+PASS
+
+Missing Values:
+'?' treated as missing values
+
+Duplicate Check:
+Reported separately
+
+Label Quality Check:
+Completed

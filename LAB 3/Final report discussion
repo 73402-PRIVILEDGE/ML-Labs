@@ -1,0 +1,11 @@
+The MLP model achieved a test accuracy of 87.20% after training for five epochs on the Fashion-MNIST dataset.
+
+The MLP achieved good classification performance but required the highest number of parameters (235,146). This increases memory consumption compared with the CNN and Attention architectures.
+
+The CNN architecture used significantly fewer parameters (20,490) due to weight sharing through convolutional kernels. CNNs are generally well suited for image classification because they exploit spatial information contained within images.
+
+The Attention architecture used 70,794 parameters and provides the ability to capture relationships between different image regions using self-attention mechanisms. This allows global interactions between patches of the image.
+
+From the parameter comparison, CNN is the most parameter-efficient architecture. MLP is the simplest architecture but requires substantially more parameters. The Attention model provides a compromise between parameter efficiency and representational power.
+
+The experimental results demonstrate that different architectures involve trade-offs between parameter count, computational cost, memory usage, and predictive performance. Selecting the most appropriate architecture depends on the desired balance between accuracy and computational efficiency.
