@@ -52,7 +52,6 @@ Training Time = 0.365 s
 
 Task 6:
 Compared eager execution and traced execution.
-
 Observed tensor:
 Shape = [1000,100]
 dtype = float32
