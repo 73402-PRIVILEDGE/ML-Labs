@@ -1,0 +1,107 @@
+ PROJECT PROPOSAL
+Name: Priviledge Greatwin Mhakayakora
+ Student ID: 73402
+
+Project Title
+
+Real-Time Financial Fraud Detection Using Optimized Deep Learning Models
+
+Background and Problem Statement
+
+The rapid growth of digital banking, mobile money services, online shopping platforms, and electronic payment systems has transformed modern financial transactions. Millions of transactions are processed every day across financial institutions worldwide. While these technological advancements have improved convenience and accessibility, they have also created opportunities for increasingly sophisticated fraudulent activities.
+
+Financial fraud continues to be one of the most significant challenges facing banks, payment processors, and e-commerce platforms. Fraudulent transactions result in substantial financial losses, damage customer trust, and increase operational costs associated with fraud investigation and prevention. Traditional fraud detection systems predominantly rely on manually designed rules and predefined thresholds. Although these approaches can detect known fraudulent patterns, they often struggle to identify new and evolving fraud techniques.
+
+Machine learning offers an effective solution by learning patterns directly from transaction data and automatically adapting to complex relationships between features. However, deploying machine learning models in real-world financial environments introduces additional challenges. Fraud detection systems must process transactions in real time, produce predictions within milliseconds, and operate efficiently under strict memory and computational constraints.
+
+The aim of this project is to design, train, optimize, and evaluate a machine learning-based financial fraud detection system capable of distinguishing legitimate transactions from fraudulent ones with high accuracy while meeting practical deployment requirements. The project will also investigate how training optimization techniques and model compression methods affect system performance and deployment efficiency. This aligns with modern industry practices in financial technology (FinTech) and artificial intelligence operations (MLOps).
+
+Dataset
+
+This project will utilize the publicly available Credit Card Fraud Detection Dataset, which contains anonymized credit card transaction records labeled as fraudulent or legitimate transactions. The dataset presents a realistic and challenging machine learning problem because fraudulent transactions represent only a small fraction of the total observations, resulting in a highly imbalanced dataset.
+
+The dataset includes:
+
+Transaction attributes generated through feature transformation techniques
+Transaction amount information
+Time-related transaction features
+Binary fraud labels
+Thousands of real transaction records
+
+The imbalanced nature of the dataset makes it suitable for evaluating advanced machine learning techniques and performance metrics beyond simple accuracy.
+
+Project Objectives
+
+The major objectives of this project are:
+
+To develop a reproducible machine learning training pipeline using a YAML-driven configuration system.
+To implement experiment tracking and model management using MLflow.
+To build and evaluate deep learning models for financial fraud detection.
+To analyze training bottlenecks using PyTorch Profiler.
+To compare different optimization methods, including learning rate schedulers and optimizers.
+To investigate batch-size effects on model performance and system throughput.
+To implement checkpointing mechanisms that support training recovery after interruptions.
+To optimize the final model for deployment using model compression techniques.
+To deploy a lightweight fraud detection model that satisfies strict latency and storage requirements.
+Methodology
+
+The project will begin with data preparation and preprocessing, including data cleaning, class balance analysis, normalization, and dataset partitioning into training, validation, and testing subsets.
+
+Several neural network architectures will be explored and trained using PyTorch. Experiments will be managed using MLflow to ensure reproducibility and effective comparison of results. Training metrics, hyperparameters, model checkpoints, and performance statistics will be logged throughout the experimentation process.
+
+The training process will be profiled to determine the computational impact of data loading, forward propagation, backward propagation, and optimization steps. Performance studies will then be conducted by varying worker counts, batch sizes, learning-rate schedules, and optimization algorithms.
+
+Finally, model optimization techniques will be applied to produce a compact and efficient deployment-ready model.
+
+Success Metrics
+
+The performance of the fraud detection system will be evaluated using multiple metrics:
+
+Accuracy
+Precision
+Recall
+F1-Score
+Area Under the ROC Curve (AUC)
+Detection Rate
+False Positive Rate
+
+Because fraud detection datasets are highly imbalanced, special emphasis will be placed on Recall, Precision, F1-Score, and AUC rather than overall accuracy alone. A successful model should achieve:
+
+Accuracy above 95%
+Precision above 90%
+Recall above 90%
+F1-Score above 90%
+AUC above 0.95
+Deployment Constraints
+
+To simulate real-world deployment requirements, the final model must satisfy the following constraints:
+
+Inference latency of no more than 50 milliseconds per transaction
+Model size of no more than 5 MB
+Low memory consumption
+Fast prediction capability suitable for real-time applications
+Compatibility with mobile and edge computing environments
+
+These constraints ensure that the developed solution can be deployed in practical financial systems where rapid decision-making is essential.
+
+Planned Optimization Technique
+
+The primary optimization technique selected for this project is Quantization.
+
+Quantization reduces the precision of model parameters from 32-bit floating-point representations to lower-precision formats such as 8-bit integers. This reduces storage requirements and computational costs while maintaining acceptable predictive performance.
+
+The expected benefits include:
+
+Reduced model size
+Faster inference speed
+Lower memory usage
+Improved deployment efficiency
+Compliance with latency and storage constraints
+
+If necessary, model pruning techniques will also be investigated to further reduce model complexity.
+
+Expected Outcomes
+
+The expected outcome of this project is a robust and lightweight fraud detection system capable of accurately identifying suspicious financial transactions in real time. The project will demonstrate practical knowledge of machine learning model development, experiment tracking, performance profiling, training optimization, checkpoint recovery, and model compression techniques.
+
+Furthermore, the project will provide insight into how modern financial institutions can leverage artificial intelligence to strengthen fraud prevention strategies while maintaining efficient and scalable deployment solutions. The final system will serve as a practical example of applying machine learning and MLOps principles to solve a real-world problem within the financial technology sector.
